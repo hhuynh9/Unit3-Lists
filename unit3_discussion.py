@@ -229,6 +229,37 @@ def main():
     print("Deleting negative index -1:", delete_at(numbers, -1))
     print("Final list:", numbers)
 
+    # ==================================
+    # REAL-WORLD EXAMPLE: INVENTORY
+    # ==================================
+    print("\n=== INVENTORY MANAGEMENT EXAMPLE ===")
+
+    # Start with a list of inventory items.
+    inventory = ["Rice", "Chicken", "Milk", "Eggs"]
+    print("Original inventory:", inventory)
+
+    # Add a new item to the inventory.
+    # Items after index 1 move one position to the right.
+    insert_at(inventory, 1, "Bread")
+    print("After adding Bread:", inventory)
+
+    # Search for an item to find its location.
+    # The search checks each item until it finds Chicken.
+    position = search_value(inventory, "Chicken")
+    print("Chicken found at index:", position)
+
+    # Remove Milk after finding its location.
+    # Checking the index prevents an invalid deletion.
+    milk_index = search_value(inventory, "Milk")
+    if milk_index != -1:
+        removed = delete_at(inventory, milk_index)
+        print("Removed item:", removed)
+
+    print("Updated inventory:", inventory)
+
+    # Test searching for an item that is not available.
+    # A missing item returns -1 instead of crashing.
+    print("Searching for Beef:", search_value(inventory, "Beef"))
 
 if __name__ == "__main__":
     main()
