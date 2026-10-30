@@ -31,16 +31,17 @@ Your reflection should be approximately 150–200 words and address the followin
 
 ### My Reflection
 
-For this assignment, I learned more about how Python lists work when adding, removing, and searching for values. Before 
-this, I understood the basic idea of lists, but I didn't really think about what happens to the other elements when 
-something gets inserted or deleted. Testing the different positions helped me understand why some operations 
-take more time than others.
+For this assignment, I learned more about how Python lists work when adding, removing, and searching for values. 
+Before this, I understood the basic idea of lists, but I didn't really think about what happens to the other elements 
+when something gets inserted or deleted. Testing different positions helped me understand why some operations take more 
+time than others. One challenge I had was getting my Python environment set up correctly in IntelliJ. 
 
-One challenge I had was getting my Python environment set up correctly in IntelliJ. Once I got that working, I also had 
-to pay more attention to how the program handled invalid indexes and empty lists. I used different test cases to make 
-sure the program would return the correct results instead of crashing. Seeing the output after each operation helped me 
-understand what was actually happening.
+Once I got that working, I also had to pay more attention to how the program handled invalid indexes and empty lists. 
+I used different test cases to make sure the program returned the correct results instead of crashing. Seeing the 
+output after each operation helped me understand what was happening. 
 
 I can see how this applies to real-world applications, especially inventory systems where items are constantly being 
-added, removed, or searched for. With larger lists, inserting or deleting near the beginning can take more time because 
-other elements need to shift. This assignment helped me better understand why choosing the right data structure matters.
+added, removed, or searched for. With larger lists, inserting or deleting near the beginning can take more time because
+other elements need to shift. I also learned that linked lists can be useful for frequent insertions and deletions when 
+the node is already known, while Python lists make accessing items by index easier. This assignment helped me understand
+why choosing the right data structure matters.
